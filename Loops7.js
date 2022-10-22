@@ -16,19 +16,14 @@ var x = 0
 var prosek;
 var prosek = 0;
 
-for (x = 0; x < a.length; x += 1) {
-
+for (x = 0; x < a.length; x ++) {
 prosek += a[x];
-
 }
+
 prosek /= 5;
 console.log(prosek);
 
-if (prosek < 50)
-    {
-        console.log("Nemaju pojma");
-    }
-    else if (prosek <=61 && prosek >50)
+if (prosek <=61 && prosek >50)
         {
             console.log("Average grade is E");
         }
@@ -47,4 +42,8 @@ if (prosek < 50)
     else if (prosek <=100 && prosek >90)
         {
             console.log("Average grade is A");
+        }
+        else 
+        {
+            console.log("Nemaju pojma");
         }

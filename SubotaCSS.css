@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'PressStart';
+    src: url('./Fonts/PressStart2P-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Khmer';
+    src: url('https://fonts.googleapis.com/css2?family=Koulen&display=swap')
+}
+
+
+body {
+    background-color: blanchedalmond;
+    opacity: 0.5;
+    font-size: 14;
+    font-weight: 500;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.h1 {
+    font-family: 'Khmer', sans-serif;
+}
+
+#prvi {
+    font-family: 'PressStart';
+}
+
+#drugi {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-style: oblique;
+}
+
+#treci {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+}
+
+#Lee {
+    font-family: 'Gill Sans MT', sans-serif;
+}
+
+#beWater {
+    font-weight: bolder;
+}
+
+#ittei {
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+#mighty {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#puny {
+    text-transform: lowercse;
+    text-decoration-line: line-through;
+}
+
+#One {
+    letter-spacing: 5px;
+text-align: left;
+}
+
+#Two {
+    line-height: 200%;
+text-align: right;
+}
+
+#Three {
+text-align: center;
+}
+
+#NWWM {
+    color: rgb(176, 219, 19);
+    opacity: 0.5;
+    text-shadow: 5px 5px #b42b2b;
+}
+
+a:visited {
+    color:black;
+}
+
+a:hover {
+    color:green;
+}
+
+a:link {
+    color: red;
+}
+
+a:active {
+    color:blue;
+}
+
+div {
+    background-color: #b42b2b;
+}
+
+#p1 {
+    color: rgb(0, 206, 209);
+}
+
+#p2{
+    color: #00ced1;
+}
+
+#p3{
+    color: #00ced1;
+}

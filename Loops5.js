@@ -9,8 +9,8 @@ var niz = "";
 for (x = 0; x < a.length; x += 1) {
 
     for (y = 0; y < a[x].length; y += 1) {
-        
-        console.log(niz += a[x][y]);
+        niz += " ";
+        niz += a[x][y];
     }
-
 }
+console.log(niz)
