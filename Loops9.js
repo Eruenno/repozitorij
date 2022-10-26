@@ -160,8 +160,48 @@ console.log(least, position);
 
 //Write a program that finds the first element larger than minimum and prints out its value. Input array: [4, 2, 2, -1, 6] Output: 2
 
+var a = [4, 2, 2, -1, 6];
+var leastPos = a[0];
+var b = [];
 
-//Ovde nesto gadno ne valja
+for (let i = 0; i < a.length; i++) {
+    if (a[i] < leastPos) {
+        leastPos = i;
+    }
+}
+for (let i = 0; i < a.length; i++) {
+    if (a[i] != a[leastPos]) {
+        b.push(a[i])
+    }
+}
+leastPos = b[0];
+for (let i = 0; i < b.length; i++) {
+    if (b[i] < leastPos) {
+        leastPos = b[i];
+    }
+}
+
+console.log(leastPos)
+
+// ili
+
+let a = [4, 2, 2, -1, 6];
+var b;
+
+a.sort();
+
+for (let i = 0; i < a.length; i++)
+    if (a[i] >= a[0] && i !=0) {
+// Moze da bude bez = i &&, zavisi da li drugi najmanji clan mora striktno biti drugaciji od najmanjeg ili je dovoljno da je samo u sortiranom nizu drugi po redu.
+        b = a[i]
+        break;
+    }
+
+console.log("smallest element is", a[0]);
+console.log("second smallest element is", b);
+
+        //Ovde nesto gadno ne valja
+
 var a = [4, 2, 2, -1, 6];
 var leastPos = a[0];
 var secondLeast = a[0];
@@ -213,6 +253,27 @@ if (sym) {
     console.log("The array is symmetric.")
 }
 
+// ili
+
+var a = [2, 4, -2, 7, -2, 4, 2];
+var b = [];
+var c;
+var d;
+
+    for (let i = a.length - 1; i >= 0; i--) {
+        b.push(a[i]);
+    }
+
+var c = a.join("")
+var b = b.join("")
+
+if (c==b) {
+    console.log("The array is symmetric.")
+}
+else {
+    console.log("The array is not symmetric.")
+}
+
 
 
 //Write a program that intertwines two arrays. You can assume the arrays are of the same length. Input arrays: [4, 5, 6, 2], [3, 8, 11, 9] Output array: [4, 3, 5, 8, 6, 11, 2, 9]
@@ -229,15 +290,19 @@ console.log(c);
 
 
 
-//Write a program that concatenates two arrays. Input arrays: [4, 5, 6, 2], [3, 8, 11, 9] Output array: [4, 5, 6, 2, 3, 8, 11, 9]
+            //Write a program that concatenates two arrays. Input arrays: [4, 5, 6, 2], [3, 8, 11, 9] Output array: [4, 5, 6, 2, 3, 8, 11, 9]
 
 var a = [4, 5, 6, 2];
 var b = [3, 8, 11, 9];
 var c = []
+c.length = a.length + b.length;
 
 for (let i = 0; i < a.length; i++) {
     c[i] = a[i];
-    c[i+1] = b[i];
+}
+
+for (let i = 1; i < a.length; i*2) {
+    c[i*2] = b[i];
 }
 
 console.log(c)
@@ -250,12 +315,24 @@ var e = 2;
 var a = [4, 6, 2, 8, 2, 2];
 var b = [];
 
-for (let i = 0; i <a.length; i++) {
+for (let i = 0; i < a.length; i++) {
     if (a[i] != e) {
         b += a[i];
     }
 }
- console.log(b);
+console.log(b);
+
+        // ili - slice ne vraca "pravi" arr?
+
+var e = 2;
+var a = [4, 6, 2, 8, 2, 2];
+var b;
+var b = [];
+
+
+var b = a.slice(0, e) + a.slice(e+1, a.length);
+
+console.log(b);
 
 
 
@@ -265,7 +342,7 @@ var e = 78;
 var p = 3;
 var a = [2, -2, 33, 12, 5, 8];
 
-if(p <= a.length && p >= 0) {
+if (p <= a.length && p >= 0) {
     for(i = a.length; i > p; i--) {
         a[i] = a[i-1];
     }
