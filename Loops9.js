@@ -361,4 +361,3 @@ var p = 3;
 
 a.splice(p, 0, e)
 console.log(a);
-
