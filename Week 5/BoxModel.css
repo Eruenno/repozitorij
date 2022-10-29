@@ -1,0 +1,63 @@
+#Prvi {
+    background-color: yellow;
+    width: 400px;
+    max-width: 300px;
+    height: 500px;
+    overflow: hidden;
+}
+
+#Drugi {
+    background-color: red;
+    width: 600px;
+    height: 300px;
+    max-width: 200px;
+    overflow: hidden;
+    overflow: scroll;
+}
+
+.prvi {
+display: inline;
+background-color: yellow;
+border: 5px;
+border-style: dashed;
+border-color: red;
+padding: 50px;
+margin: 50px;
+width: 300px;
+}
+
+.drugi {
+background-color: yellow;
+border: 5px;
+border-style: solid;
+border-color: green;
+padding: 50px 0px 0px 0px;
+width: 400px;
+display: inline;
+visibility: hidden;
+}
+
+.treci {
+display: inline;
+background-color: yellow;
+border: 5px;
+border-style: dashed;
+border-color: red;
+padding: 50px;
+width: 200px;
+margin: 0px 0px 0px 100px;
+visibility: hidden;
+}
+
+h1 {
+    width: 960px;
+    display: flex;
+    box-align: center;
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+    background-color: aqua;
+    color: bisque;
+    box-shadow: 20px;
+    font-display: red;
+}

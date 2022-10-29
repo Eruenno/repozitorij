@@ -1,0 +1,77 @@
+:root {
+    --background-color: rgb(56,56,56);
+    --border-color: rgb(245, 3, 3);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, a, p, span {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+background-color: var(--background-color);
+display:flex;
+flex-direction: column;
+height: 100vh;
+margin: 0px;
+overflow: hidden;
+}
+
+nav {
+    display:flex;
+    width: 100%;
+    border-bottom: 1px solid var (--border-color);
+}
+
+nav > .navSection {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var (--border-color);
+    align-items: center;
+    justify-content: center;
+}
+
+#navLogoSection,
+#navLinkSection {
+    flex-basis: calc(100%/3);
+}
+
+#navSocialSection,
+#navContactSection {
+    flex-grow: 1;
+}
+
+main {
+    flex-grow: 1;
+}
+
+main > article {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+main > article > .articleSection {
+    height: 100%;
+}
+
+main > article > .articleDescriptionSection,
+main > article > .articleNavSection {
+    border-left: 1px solid var (--border-color);
+}
+
+main > article > .articleTitleSection,
+main > article > .articleNavSection {
+    border-top: 1px solid var (--border-color);
+}

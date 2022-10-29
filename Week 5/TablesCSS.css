@@ -1,0 +1,107 @@
+#first {
+   list-style-type: circle; 
+}
+
+#second {
+    list-style-type: square;
+}
+
+#third {
+    list-style-type: upper-alpha;
+}
+
+#fourth {
+    list-style-type: upper-roman;
+}
+
+.additional {
+    width: 200px;
+    list-style-image: url();
+}
+
+#sixth {
+    max-height: 200px;
+    list-style-position: inside;
+}
+
+table {
+    margin-left:auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+table > th {
+    color: red;
+}
+
+tbody tr:nth-child(odd){
+    background-color: gray;
+}
+
+tr:hover {
+    background-color: yellow;
+}
+
+#phoneimages {
+    height: 100px;
+}
+
+input {
+    font-size: 120%;
+    color: #5a5854;
+    background-color: #f2f2f2;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 5px 5px 5px 30px;
+    background-repeat: no-repeat;
+    background-position: 8px 9px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: red;
+    border-radius: 10px;
+    margin: auto;
+    border: none;
+    padding: 10px 150px;
+    color: white;
+}
+
+.formBox {
+    text-align: center;
+    margin:0 auto; 
+    width:400px; 
+    padding: 20px;
+    background: rgb(211, 203, 203);
+    border: 2px solid #333;
+    border-radius: 20px 0px;
+    border: none;
+}
+
+
+#field {
+    box-shadow: 0 0 3px 1px;
+    width: 300px;
+    margin: auto;
+}
+
+hr {
+    width: 340px;
+}
+
+#get {
+    color: yellow;
+}
+
+#formGet {
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 300%;
+    margin: 10px 0px 0px 0px;
+}
+
+form label {
+    text-align: left;
+    display: inline-block;
+    width: 340px;
+}

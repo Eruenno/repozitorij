@@ -181,7 +181,7 @@ for (let i = 0; i < b.length; i++) {
     }
 }
 
-console.log(leastPos)
+console.log(leastPos);
 
 // ili
 
@@ -361,3 +361,98 @@ var p = 3;
 
 a.splice(p, 0, e)
 console.log(a);
+
+
+
+for (let i=0; i < 90; i++) { 
+    if (i % 7 == 0) {
+        console.log(0);
+    }
+    else {
+        console.log("da nije slucajno kurcina");
+    }
+}
+
+var visina = 10;
+var sirina = 10;
+
+for (let i=0; i < visina; i++) {
+    let a = "";
+    for (let j=0; j<sirina; j++) {
+        if (j == 0 || i == 0) {
+            a += 0;
+        }
+        else if (j == sirina - 1 || i == visina - 1) {
+            a += 0;
+        }
+        else {
+            a += "*";
+        }
+    }
+    console.log(a);
+}
+
+var sirina;
+var visina;
+
+var visina = 10;
+var sirina = 10;
+
+for (let i = 0; i < visina; i++) {
+    let red = "";
+    for (let j = 0; j < sirina; j++)  
+    {
+        if (i == 0 || i == visina - 1 || j ==i) {
+            red += 0;
+        }
+        else {
+            red += "X";
+        }
+    }
+    console.log(red);
+}
+
+
+
+
+
+var osnova = 12;
+var visina;
+var visina = 0;
+
+for (let i = osnova; i >= 0; i-=2) {
+    visina += 1
+}
+
+console.log(visina)
+
+
+for (let i = 0; i < visina; i++) {
+    let polje = "";
+    for (let j = 0; j < osnova; j++)  
+    {
+        if (osnova / 2 != 0) {
+            polje += "X";
+        }
+        else if (j < osnova/2) {
+            polje += "0";
+        }
+    }
+    console.log(red);
+}
+
+
+let n = 5;
+let polje = "";
+
+for (let i = 1; i <= n; i++) {
+    for ( let j = 1; j <= n; j++){
+        polje += " ";
+    }
+    for (let k = 0; k < 2*i-1; k++) {
+        polje += " ";
+    }
+    polje += "*";
+    console.log(polje);
+}
+
