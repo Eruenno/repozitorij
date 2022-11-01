@@ -380,4 +380,117 @@ console.log(primer);
 
 //Write a function to find the position of the first occurrence of a character in a string. The result should be the position of character. If there are no occurrences of the character, the function should return -1.
 
-break;
+var a = "";
+function stringCounter (a, b) {
+    let pozicija = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] == b) {
+            pozicija = i;
+            break;
+        }
+    }
+
+    return pozicija;
+
+}
+
+var a = "My random string";
+var b = "n";
+var primer;
+var primer = stringCounter (a, b);
+console.log(primer);
+
+
+
+// Write a function to find the position of the last occurrence of a character in a string.
+//The result should be in human numeration form. If there are no occurrences of the character, function should return -1.
+
+var a = "";
+function stringCounter (a, b) {
+    let pozicija = 0;
+    for (let i = a.length; i > 0; i--) {
+        if (a[i] == b) {
+            pozicija = i + 1;
+            break;
+        }
+    }
+
+    return pozicija;
+
+}
+
+var a = "My random string";
+var b = "n";
+var primer;
+var primer = stringCounter (a, b);
+console.log(primer);
+
+
+
+        //Write a function to convert string into an array. Space in a string should be represented as “null” in new array.
+        //"My random string" -> ["M", "y", "r", ...]
+
+function srtingArrayer (a) {
+
+
+}
+
+Push 
+
+
+
+//Write a function that accepts a number as a parameter and checks if the number is prime or not.
+//Note: A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+
+
+function primeCheck(a) {
+
+  if (a===1) {
+    return false;
+  }
+    else if(a === 2) {
+    return true;
+  }
+  else {
+    for(var i = 2; i < a; i++) {
+      if(a % i === 0)
+      {
+        return false;
+      }
+    }
+    return true;  
+  }
+
+
+}
+
+var a = 6
+var primer;
+var primer = primeCheck(a);
+console.log(primer);
+
+
+
+        // Write a function that replaces spaces in a string with provided separator. If separator is not provided, use “-” (dash) as the default separator.
+// "My random string", "_" -> "My_random_string"
+
+function stringConnect (a, b) {
+
+// if (b = "") {
+//     b = "-";
+// }
+
+for (let i = 0; i < a.length; i++) {
+    if (a[i] == " ") {
+        a[i] = b;
+    }
+}
+
+return a;
+}
+
+var a = "My random string";
+var b = "_";
+var primer;
+var primer = stringConnect (a, b);
+console.log(primer);

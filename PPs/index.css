@@ -1,6 +1,6 @@
 :root {
     --background-color: rgb(56,56,56);
-    --border-color: rgb(245, 3, 3);
+    --border-color: #817a82;
 }
 
 * {
@@ -29,14 +29,14 @@ overflow: hidden;
 nav {
     display:flex;
     width: 100%;
-    border-bottom: 1px solid var (--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 nav > .navSection {
     padding: 3rem 2rem;
     display: flex;
     gap: 1rem;
-    border-left: 1px solid var (--border-color);
+    border-left: 1px solid var(--border-color);
     align-items: center;
     justify-content: center;
 }
@@ -68,10 +68,10 @@ main > article > .articleSection {
 
 main > article > .articleDescriptionSection,
 main > article > .articleNavSection {
-    border-left: 1px solid var (--border-color);
+    border-left: 1px solid var(--border-color);
 }
 
 main > article > .articleTitleSection,
 main > article > .articleNavSection {
-    border-top: 1px solid var (--border-color);
+    border-top: 1px solid var(--border-color);
 }
