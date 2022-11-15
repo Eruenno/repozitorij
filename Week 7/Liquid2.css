@@ -1,0 +1,29 @@
+/* * {
+    padding: 0px;
+} */
+
+main {
+    width: 100%;
+    padding-top:30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+padding-left:120px;
+}
+
+main #poasts {
+    clear:right;
+    position: relative;
+    float: right;
+    width: 60%;
+    padding-left: 10px;
+    border-left: solid 2px black;
+}
+
+main #about {
+    clear:left;
+    position: relative;
+    float: left;
+    width: 37%;
+}

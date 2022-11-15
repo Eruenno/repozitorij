@@ -1,0 +1,26 @@
+main {
+    width: 960px;
+    padding-top:30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+padding-left:120px;
+}
+
+main #poasts {
+    clear:right;
+    position: relative;
+    float: right;
+    width: 450px;
+    padding-left: 10px;
+    border-left: solid 2px black;
+}
+
+main #about {
+    clear:left;
+    position: relative;
+    float: left;
+    padding-right: 10px;
+    width: 450px;
+}

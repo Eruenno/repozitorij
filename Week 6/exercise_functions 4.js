@@ -194,13 +194,15 @@ var b = [3, 8, 11, 9];
 var c = [];
 c.length = a.length + b.length;
 
-for (let i = 0; i < c.length; i*2) {
+// for (let i = 0; i < c.length; i*2) {
+//     c[i] = a[i];
+// }
+var cIndex = 0
+for (let i = 0; i < a.length; i++) {
     c[i] = a[i];
-}
-
-for (let i = 1; i < c.length; i++) {
-    c[i*2] = b[i];
-    i++
+   
+    c[i + a.length] = b[i];
+    
 }
 
 console.log(c);

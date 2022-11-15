@@ -19,7 +19,7 @@ a {
 
 body {
 background-color: var(--background-color);
-display:flex;
+display: flex;
 flex-direction: column;
 height: 100vh;
 margin: 0px;

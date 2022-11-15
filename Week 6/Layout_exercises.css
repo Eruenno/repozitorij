@@ -1,0 +1,27 @@
+#firstImage {
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+#secondImage {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+#thirdImage {
+    position: absolute;
+    bottom: 1px;
+    left: 800px;
+}
+
+img {
+    height: 200px;
+}
+
+#backToTopButton {
+    position: fixed;
+    right: 5px;
+    bottom: 20px;
+}

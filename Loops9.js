@@ -294,7 +294,7 @@ console.log(c);
 
 var a = [4, 5, 6, 2];
 var b = [3, 8, 11, 9];
-var c = []
+var c = [];
 c.length = a.length + b.length;
 
 for (let i = 0; i < a.length; i++) {
@@ -305,7 +305,7 @@ for (let i = 1; i < a.length; i*2) {
     c[i*2] = b[i];
 }
 
-console.log(c)
+console.log(a);
 
 
 

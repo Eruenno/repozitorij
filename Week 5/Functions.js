@@ -526,15 +526,12 @@ console.log(primer);
 
 function stringConnect (a, b) {
 
-   // if (b = "") {
-//     b = "-";
-// } 
-
 for (let i = 0; i < a.length; i++) {
     if (a[i] === " ") {
         a[i] = b;
     }
 }
+
 
 return a;
 }
@@ -631,6 +628,7 @@ if (pol === 'm') {
 
 
 //Write a function to humanize a number (formats a number to a human-readable string) with the correct suffix such as 1st, 2nd, 3rd or 4th.
+
 function serialNumber(a) {
 
     if (a % 100 >= 11 && a % 100 <= 13) {
