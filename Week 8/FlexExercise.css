@@ -1,0 +1,36 @@
+#parent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.primary {
+    width: 70%;
+    align-self: flex-start;
+    
+}
+
+.secondary {
+    width: 30%;
+}
+
+#yellow {
+    background-color: yellow;
+
+}
+
+#orange {
+    background-color: orange;
+
+}
+
+#black {
+    background-color: black;
+
+}
+
+#brown {
+    background-color: burlywood;
+    align-self: flex-start;
+    flex: 5;
+}

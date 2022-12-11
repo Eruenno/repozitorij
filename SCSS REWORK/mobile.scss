@@ -1,0 +1,306 @@
+@font-face {
+	font-family: "Roboto";
+	src: url(./fonts/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Roboto_bold";
+	src: url(./fonts/fonts/Roboto-Bold.ttf);
+}
+
+@mixin backgroundColor($i) {
+    @if $i==1 {
+        background-color: rgb(108, 187, 242);
+    }
+    @else if $i==2 {
+        background-color: rgb(0, 100, 167);
+    }
+    @else if $i==3 {
+        background-color: rgb(0, 216, 147);
+    }
+    @else if $i==4 {
+        background-color: rgb(255, 71, 118);
+    }
+    @else if $i==5 {
+        background-color: rgb(45, 99, 218);
+    }
+    @else {
+        background-color: orange;
+    }
+}
+
+.desktop-tablet {
+	display: none;
+}
+
+body {
+	font-family: "Roboto";
+	margin: 0;
+	padding: 0;
+	line-height: 1.7;
+}
+
+h2 {
+	color: rgb(58, 151, 217);
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: -10px;
+}
+
+.line {
+	display: inline-block;
+	height: 20px;
+	width: 40px;
+	border-top: 2px solid black;
+}
+
+.square {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid black;
+	margin: 0px 10px;
+	transform: rotate(45deg);
+	position: relative;
+	top: -9px;
+}
+
+.rhombus {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 0 auto;
+	margin: 0 10px;
+	p {
+		font-size: 30px;
+	}
+}
+
+#Build {
+	color: orange;
+	border: 5px solid gray;
+	border-right: none;
+	font-size: 30px;
+	font-family: "Roboto_bold";
+	padding-left: 10px;
+}
+
+#Estate {
+	color: gray;
+	font-weight: 1000;
+}
+
+nav {
+	@include backgroundColor(1);
+	margin-bottom: 20px;
+	a {
+		text-decoration: none;
+		color: white;
+		display: block;
+		padding: 15px;
+	}
+}
+
+.Navsection-desktop-tablet {
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-image: url(./images/images/banner3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 301px;
+	h1 {
+		color: white;
+		padding-bottom: 20px;
+	}
+	button {
+		@include backgroundColor(2);
+		color: white;
+		border: none;
+		padding: 12px 30px;
+		border-radius: 25px;
+	}
+}
+
+.About-section {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	margin-left: 5%;
+	margin-right: 5%;
+	ul {
+		list-style-image: url(./images/images/arrow_bullet.png);
+	}
+	img {
+		height: 300px;
+		margin-bottom: 20px;
+	}
+}
+
+.left-flex {
+	color: rgb(71, 70, 79);
+	margin: 0 20px;
+	flex: 1 0 20%;
+}
+
+.middle-flex {
+	flex: 1 0 20%;
+}
+
+.right-flex {
+	color: rgb(71, 70, 79);
+	margin: 0 20px;
+	flex: 1 0 20%;
+}
+
+.Testimonial-section {
+	display: flex;
+	flex-direction: column;
+	article {
+        @include backgroundColor(1);
+		margin: 10px;
+		padding: 20px;
+		padding-bottom: 30px;
+		padding-top: 70px;
+		p {
+			color: white;
+			line-height: 1.7;
+		}
+		span {
+			color: black;
+			font-family: "Roboto_bold";
+		}
+		img {
+			height: 100px;
+			border-radius: 50%;
+			margin-right: 20px;
+			padding: 5px;
+			border: 2px solid white;
+		}
+	}
+}
+
+.info-flex {
+	display: flex;
+}
+
+.celeb {
+	span {
+		display: block;
+		font-size: 20px;
+		margin-bottom: -15px;
+	}
+}
+
+.Contact-section {
+	display: flex;
+	justify-content: center;
+	flex: row;
+	flex-wrap: wrap;
+}
+
+.Contact {
+	@include backgroundColor(3);
+	color: white;
+	text-align: center;
+	padding: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 70px;
+	flex: 1 0 25%;
+	width: 50%;
+	img {
+		height: 18px;
+		margin-bottom: -3px;
+		&:nth-child(2) {
+			height: 22px;
+		}
+	}
+	span {
+		font-size: 14px;
+	}
+}
+
+.Connect {
+    @include backgroundColor(4);
+	color: white;
+	text-align: center;
+	padding: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 70px;
+	flex: 1 0 25%;
+	width: 50%;
+	img {
+		height: 20px;
+		flex: 1 0 25%;
+	}
+}
+
+.Address {
+    @include backgroundColor(5);
+	color: white;
+	text-align: center;
+	padding: 10px;
+	padding-top: 50px;
+	flex: 1 0 25%;
+}
+
+.House {
+	@include backgroundColor(1);
+	text-align: center;
+	padding: 10px;
+	flex: 1 0 25%;
+	img {
+		margin-top: 30px;
+		width: 100%;
+		height: 70%;
+		margin-right: -15px;
+	}
+}
+
+.Form-section {
+	width: 450px;
+	margin: 0 auto;
+}
+
+.Form-div {
+	margin: 0 auto;
+	margin-left: 50px;
+	margin-right: 20px;
+}
+
+input {
+	display: block;
+	margin-bottom: 10px;
+	width: 300px;
+	line-height: 2;
+}
+
+textarea {
+	display: block;
+	margin-bottom: 10px;
+	width: 300px;
+	line-height: 2;
+}
+
+button {
+	@include backgroundColor();
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	margin-bottom: 50px;
+}
